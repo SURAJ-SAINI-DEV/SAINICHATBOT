@@ -1,4 +1,3 @@
-
 from pyrogram import Client, filters
 from pyrogram.types import *
 from pymongo import MongoClient
@@ -17,11 +16,11 @@ API_HASH = os.environ.get("API_HASH", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
 MONGO_URL = os.environ.get("MONGO_URL", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME","") 
-UPDATE_CHNL = os.environ.get("UPDATE_CHNL","BWF_MUSIC1")
-OWNER_USERNAME = os.environ.get("OWNER_USERNAME","L2R_KING")
-SUPPORT_GRP = os.environ.get("SUPPORT_GRP","BWF_MUSIC1")
-BOT_NAME = os.environ.get("BOT_NAME","CHATBOT")
-START_IMG = os.environ.get("START_IMG","https://telegra.ph/file/e576aa8308c49d945f433.jpg")
+UPDATE_CHNL = os.environ.get("UPDATE_CHNL","quizbys")
+OWNER_USERNAME = os.environ.get("OWNER_USERNAME","attitude_boy91")
+SUPPORT_GRP = os.environ.get("SUPPORT_GRP","https://t.me/+HsKdS8nBrTs1Mzc1")
+BOT_NAME = os.environ.get("BOT_NAME","Deepika91_bot")
+START_IMG = os.environ.get("START_IMG","https://telegra.ph/file/c100d2409d76468ecf291.jpg")
 
 STKR = os.environ.get("STKR")
 
@@ -46,8 +45,8 @@ SOURCE_TEXT = f"""
 ──────────────────
 ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ**
 """
-SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='hurr')], [InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/+yvk8RbjmSFI1ODY1"), InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK")]])
-SOURCE = "https://github.com/SURAJ-SAINI-DEV/CHATBOT"
+SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='hurr')], [InlineKeyboardButton(" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GRP}"), InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK")]])
+SOURCE = 'https://github.com/SURAJ-SAINI-DEV/SAINICHATBOT'
 x=["❤️","🎉","✨","🪸","🎉","🎈","🎯"]
 g=choice(x)
 async def is_admins(chat_id: int):
@@ -60,13 +59,13 @@ async def is_admins(chat_id: int):
 
 MAIN = [
     [
-        InlineKeyboardButton(text="👑 ᴏᴡɴᴇʀ 👑", url="https://t.me/attitude_boy91"),
-        InlineKeyboardButton(text="💌 ꜱᴜᴘᴘᴏʀᴛ 💌", url="https://t.me/quizbys"),
+        InlineKeyboardButton(text="👑 ᴏᴡɴᴇʀ 👑", url=f"t.me/attitude_boy91"),
+        InlineKeyboardButton(text="💌 ꜱᴜᴘᴘᴏʀᴛ 💌", url=f"https://t.me/+HsKdS8nBrTs1Mzc1"),
     ],
     [
         InlineKeyboardButton(
             text="⛩️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ⛩️",
-            url=f"https://t.me/Deepika91_bot", "startgroup=true",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
@@ -81,18 +80,18 @@ PNG_BTN = [
     [
          InlineKeyboardButton(
              text="⛩️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ⛩️",
-             url=f"https://t.me/Deepika91_bot,"
+             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
          ),
      ],
      [
          InlineKeyboardButton(
              text="💌 sᴜᴘᴘᴏʀᴛ 💌", 
-             url=f"https://t.me/Deepika91_bot",
+             url=f"https://t.me/{SUPPORT_GRP}",
          ),
      ],
 ]
 
-HELP_READ = "**ᴜsᴀɢᴇ ☟︎︎︎**\n**➻ ᴜsᴇ** `/chatbot on` **ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**➻ ᴜsᴇ** `/chatbot off` **ᴛᴏ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**๏ ɴᴏᴛᴇ ➻ ʙᴏᴛʜ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴄʜᴀᴛ-ʙᴏᴛ ᴏɴ/ᴏғғ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!**\n\n**➻ ᴜsᴇ** `/ping` **ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n||©️ @SAINICHATBOT||"
+HELP_READ = "**ᴜsᴀɢᴇ ☟︎︎︎**\n**➻ ᴜsᴇ** `/chatbot on` **ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**➻ ᴜsᴇ** `/chatbot off` **ᴛᴏ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**๏ ɴᴏᴛᴇ ➻ ʙᴏᴛʜ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴄʜᴀᴛ-ʙᴏᴛ ᴏɴ/ᴏғғ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!**\n\n**➻ ᴜsᴇ** `/ping` **ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n||©️ @BRANDRD_BOT||"
 HELP_BACK = [
      
     [
@@ -108,7 +107,7 @@ async def must_join_channel(bot: Client, msg: Message):
             await bot.get_chat_member(UPDATE_CHNL, msg.from_user.id)
         except UserNotParticipant:
             if UPDATE_CHNL.isalpha():
-                link = "https://t.me/quizbys
+                link = "https://t.me/" + UPDATE_CHNL
             else:
                 chat_info = await bot.get_chat(UPDATE_CHNL)
                 link = chat_info.invite_link
@@ -118,7 +117,7 @@ async def must_join_channel(bot: Client, msg: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/quizbys"),
+                                InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url=link),
                             ]
                         ]
                     )
@@ -133,11 +132,11 @@ async def restart(client, m: Message):
         accha = await m.reply_text(
                         text = f"{g}")
         await asyncio.sleep(1)
-        await accha.edit("👻ʜᴇʏ ɪ ᴀᴍ🍒 https://telegra.ph/file/e07afef73510759dae7bd.jpg  [🔊ᴏɴ♦️ᴏғғ🔇]")
+        await accha.edit("👻ʜᴇʏ ɪ ᴀᴍ🍒 [🔊ᴏɴ♦️ᴏғғ🔇]")
         await asyncio.sleep(0.5)
-        await accha.edit("💨𝗚𝗥𝗢𝗨𝗣 𝗝𝗢𝗜𝗡 𝗞𝗥 𝗟𝗢 🌷°‌⁪༎꯭ࠫ𝆺𝅥•๋⸙‌ٖٖٖٖٖٖٜٖٖ 💌 🍷 https://t.me/quizbys🍷💨𝗣𝗟𝗦 𝗜𝗡𝗧𝗘𝗭𝗔𝗥 𝗞𝗔𝗥 𝗥𝗛𝗜 𝗛𝗨 🍒🥀✨")
+        await accha.edit("💨https://t.me/+HsKdS8nBrTs1Mzc1 🍒🥀✨")
         await asyncio.sleep(0.5)
-        await accha.edit("💨𝗚𝗥𝗢𝗨𝗣 𝗝𝗢𝗜𝗡 𝗞𝗥 𝗟𝗢 🌷°‌⁪༎꯭ࠫ𝆺𝅥•๋⸙‌ٖٖٖٖٖٖٜٖٖ 💌 🍷 https://t.me/quizbys🍷💨𝗣𝗟𝗦 𝗜𝗡𝗧𝗘𝗭𝗔𝗥 𝗞𝗔𝗥 𝗥𝗛𝗜 𝗛𝗨 🍒🥀✨")
+        await accha.edit("https://t.me/+HsKdS8nBrTs1Mzc1🍒🥀✨")
         await asyncio.sleep(0.5)
         await accha.delete()
         umm = await m.reply_sticker(
@@ -190,7 +189,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [BRANDED KING](https://t.me/BRANDEDKING82)||**",
+                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [•꯭─꯭╼⃝꯭𖠁꯭♥️𝅥‌꯭꯭꯭𝅥𝆬‌꯭꯭꯭꯭꯭꯭𝆬••꯭꯭••꯭꯭🆂꯭𝐮꯭𝐫꯭𝐚𝐣✺꯭‌꯭𝐒꯭𝐚𝐢꯭𝐧꯭𝐢••꯭꯭𝅥‌꯭꯭꯭𝅥𝆬‌꯭꯭꯭𝆬♥️꯭𖠁⃝꯭╾꯭─•.](https://t.me/attitude_boy91)||**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
