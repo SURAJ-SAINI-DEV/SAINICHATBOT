@@ -66,7 +66,7 @@ MAIN = [
     [
         InlineKeyboardButton(
             text="⛩️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ⛩️",
-            url=f"https://t.me/Deepika91_bot", startgroup=true",
+            url=f"https://t.me/Deepika91_bot", "startgroup=true",
         ),
     ],
     [
